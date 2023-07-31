@@ -18,13 +18,13 @@
     "watch": "cross-env tsc --watch",
     "test": "cross-env jest",
     "seed": "cross-env medusa seed -f ./data/seed.json",
-    "start": "cross-env npm run build && medusa start",
+    "start": "medusa migrations run && medusa start",
     "start:custom": "cross-env npm run build && node --preserve-symlinks index.js",
     "dev": "cross-env npm run build && medusa develop",
-    "build:admin": "cross-env medusa-admin build"
+    "build:admin": "cross-env medusa-admin build --deployment"
   },
   "dependencies": {
-    "@medusajs/admin": "^6.0.0",
+    "@medusajs/admin": "^6.0.4",
     "@medusajs/cache-inmemory": "^1.8.7",
     "@medusajs/cache-redis": "^1.8.7",
     "@medusajs/event-bus-local": "^1.9.4",
