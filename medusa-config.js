@@ -71,7 +71,8 @@ const modules = {
     options: {
       redisUrl: REDIS_URL
     }
-  };
+  },
+};
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
 const projectConfig = {
