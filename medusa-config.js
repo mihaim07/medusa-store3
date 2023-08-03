@@ -89,7 +89,7 @@ const projectConfig = {
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
-  projectConfig
+  projectConfig,
   plugins,
   modules,
 };
